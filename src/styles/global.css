@@ -69,6 +69,22 @@ a {
   text-decoration: none;
 }
 
+/* Inline footnote references */
+a.fn-ref {
+  font-size: 0.65em;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 0.1em;
+  transition: color 0.15s;
+}
+a.fn-ref:hover {
+  color: var(--color-text);
+}
+
 /* ============================================
    Typography
    ============================================ */

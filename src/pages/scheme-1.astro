@@ -1,0 +1,749 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+const perspectives = [
+  {
+    src: "/images/scheme-1/perspective-main.jpg",
+    caption: "Perspective rendering of Booth House Scheme 1, c. 1911 — primary view from the approach, showing the covered entry bridge, horizontal massing, and deep overhanging eaves. Frank Lloyd Wright Foundation Archives, Avery Library, Columbia University.",
+    label: "Primary Perspective — Avery Archive"
+  },
+  {
+    src: "/images/scheme-1/perspective-color.jpg",
+    caption: "Pencil perspective of Booth House Scheme 1, c. 1911 — view from across the ravine showing the estate's full horizontal extent and its relationship to the wooded landscape. Frank Lloyd Wright Foundation Archives.",
+    label: "Perspective from the Ravine"
+  },
+  {
+    src: "/images/scheme-1/perspective-pencil.jpg",
+    caption: "Pencil sketch perspective of Booth House Scheme 1, c. 1911 — showing the pergola walkways connecting the main block to the subsidiary wings, and the covered porte-cochère at the entrance.",
+    label: "Pencil Sketch — Full Estate Extent"
+  },
+  {
+    src: "/images/scheme-1/hitchcock-plate.jpg",
+    caption: "Plate 181–182 from Henry-Russell Hitchcock, \"In the Nature of Materials: The Buildings of Frank Lloyd Wright, 1887–1941\" (1942) — the perspective and both floor plans as published in the first comprehensive scholarly survey of Wright's work. Caption: \"Project: Sherman M. Booth House, Ravine Bluffs, Glencoe, Ill. 1911.\"",
+    label: "Published in Hitchcock, 1942"
+  },
+];
+
+const plans = [
+  {
+    src: "/images/scheme-1/plan-ground.jpg",
+    caption: "Ground floor plan, Booth House Scheme 1, c. 1911 — showing the main residential block with long pergola extensions radiating outward, service wings, and the contours of the ravine integrated into the plan. Frank Lloyd Wright Foundation Archives, Avery Library, Columbia University.",
+    label: "Ground Floor Plan"
+  },
+  {
+    src: "/images/scheme-1/plan-second.jpg",
+    caption: "Second floor plan, Booth House Scheme 1, c. 1911 — labeled rooms include a dedicated Gallery, Living Room, Kitchen Room, and Sleeping Porch. The plan shows extensive roof terraces and a more compact upper volume set over the sprawling ground floor. Frank Lloyd Wright Foundation Archives, Avery Library.",
+    label: "Second Floor Plan"
+  },
+  {
+    src: "/images/scheme-1/plan-site.jpg",
+    caption: "Site plan, Booth House Scheme 1 — the house footprint oriented diagonally on the property to maximize ravine views, with extensive grounds to the south and the ravine wrapping the north and east sides of the site.",
+    label: "Site Plan"
+  },
+];
+---
+
+<Layout
+  title="Booth House — Scheme 1 | Frank Lloyd Wright, Glencoe, Illinois"
+  description="The unbuilt first design for the Sherman Booth House — Frank Lloyd Wright's original estate proposal, c. 1911, before the commission was scaled back to the Scheme 2 that was built at 265 Sylvan Road, Glencoe, Illinois."
+>
+
+  <!-- Nav -->
+  <header class="scheme-nav">
+    <div class="container scheme-nav-inner">
+      <a href="/" class="scheme-nav-back">← The Booth House</a>
+      <p class="scheme-nav-label">Scheme 1 — The Unbuilt Design</p>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="scheme-hero">
+    <div class="scheme-hero-img-wrap">
+      <img src="/images/scheme-1/perspective-main.jpg" alt="Booth House Scheme 1 perspective rendering, c. 1911" class="scheme-hero-img" />
+      <div class="scheme-hero-overlay"></div>
+    </div>
+    <div class="container scheme-hero-content">
+      <p class="section-label">Frank Lloyd Wright · c. 1911</p>
+      <h1 class="scheme-title">Booth House<br/>Scheme 1</h1>
+      <p class="scheme-eyebrow">The Unbuilt Design</p>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="scheme-intro-section">
+    <div class="container">
+      <div class="scheme-intro-inner">
+        <div class="scheme-intro-text">
+          <p class="drop-cap">
+            Before the house that stands at 265 Sylvan Road, there was a grander vision.
+            Wright's first full design for the Sherman Booth commission — known as Scheme 1 —
+            was an estate of rare ambition: a sprawling horizontal complex of interlocked
+            volumes, covered pergola walkways, and subsidiary wings spread across the wooded
+            ravine landscape of Glencoe. Priced at approximately $125,000, it was more than
+            three times what Booth could afford. It was never built.
+          </p>
+          <p>
+            Discussions about the commission begin in correspondence as early as January 1910,
+            with letters written while Wright was crossing the Atlantic aboard the R.M.S. Lusitania
+            en route to Berlin to oversee the Wasmuth Portfolio. By 1911, the first complete design
+            was finished. What the drawings show is a house at the outer edge of Wright's domestic
+            ambition during the Prairie period — closer in scale and spirit to the Hillside Home
+            School or the Midway Gardens project than to any private house he had built.
+          </p>
+          <p>
+            The perspective drawing published by Henry-Russell Hitchcock in 1942 — captioned simply
+            "Project: Sherman M. Booth House, Ravine Bluffs, Glencoe, Ill. 1911" — became the
+            primary published record of the unbuilt design. But the full set of drawings held at the
+            Frank Lloyd Wright Foundation Archives at Avery Library, Columbia University, tells a
+            more complete story: a house that was also a small estate, a farm, and a landscape
+            composition conceived in collaboration with Jens Jensen, the great Prairie landscape
+            architect.
+          </p>
+        </div>
+        <aside class="scheme-aside">
+          <div class="aside-stat">
+            <span class="aside-num">$125,000</span>
+            <span class="aside-label">Original estimated cost</span>
+          </div>
+          <div class="aside-stat">
+            <span class="aside-num">$30–35k</span>
+            <span class="aside-label">Booth's actual budget</span>
+          </div>
+          <div class="aside-stat">
+            <span class="aside-num">1911</span>
+            <span class="aside-label">Design completed</span>
+          </div>
+          <div class="aside-stat">
+            <span class="aside-num">Never built</span>
+            <span class="aside-label">Replaced by Scheme 2</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perspectives -->
+  <section class="scheme-section scheme-section--dark">
+    <div class="container">
+      <h2 class="scheme-section-title">The Design</h2>
+      <p class="scheme-section-intro">
+        The perspective drawings show what Wright imagined for the Booth site before budget
+        constrained the commission. The main block is a long horizontal volume under deep
+        overhanging eaves — emphatically Prairie, emphatically earthbound — anchored by a
+        central stair tower and extended by covered pergola walkways connecting to subsidiary
+        wings. A covered entrance bridge spans the grade change at the approach from Sylvan Road.
+        Seen from the ravine, the estate appears to grow from the landscape itself, its horizontal
+        planes echoing the stratified geology of the bluffs.
+      </p>
+
+      <div class="perspectives-grid">
+        {perspectives.map((p, i) => (
+          <a
+            href={p.src}
+            class={`glightbox perspective-item ${i === 0 ? 'perspective-item--wide' : ''}`}
+            data-gallery="scheme1"
+            data-description={p.caption}
+          >
+            <div class="perspective-img-wrap">
+              <img src={p.src} alt={p.caption} loading={i === 0 ? 'eager' : 'lazy'} />
+            </div>
+            <p class="perspective-label">{p.label}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="scheme-section scheme-section--light">
+    <div class="container">
+      <h2 class="scheme-section-title scheme-section-title--dark">The Plans</h2>
+      <p class="scheme-section-intro scheme-section-intro--dark">
+        The floor plans reveal the full ambition of Scheme 1. The ground floor extends far beyond
+        the main residential block — long wings reach outward along the cross-axes, service areas
+        are generously separated from the main rooms, and the contours of the ravine are drawn
+        directly onto the plan sheet, showing how Wright integrated topography from the earliest
+        stage of design. The second floor draws back to a more concentrated volume with a
+        dedicated gallery, living spaces, and extensive sleeping porches — a vertical stacking
+        very different from the single-story Prairie norm, and a compositional move that would
+        carry through, in compressed form, into Scheme 2.
+      </p>
+
+      <div class="plans-grid">
+        {plans.map((plan) => (
+          <a
+            href={plan.src}
+            class="glightbox plan-item"
+            data-gallery="scheme1-plans"
+            data-description={plan.caption}
+          >
+            <div class="plan-img-wrap">
+              <img src={plan.src} alt={plan.caption} loading="lazy" />
+            </div>
+            <p class="plan-label">{plan.label}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Jensen -->
+  <section class="scheme-section scheme-section--dark">
+    <div class="container">
+      <div class="jensen-inner">
+        <div class="jensen-text">
+          <h2 class="scheme-section-title">Landscape: Jens Jensen</h2>
+          <p>
+            The planting plan for the Booth estate grounds — titled in Jensen's distinctive
+            hand "Planting Plan for Grounds of Mr. Sherman M. Booth, Glencoe, Illinois" —
+            is one of the most remarkable documents in this collection. It places the Booth
+            commission at the intersection of the two greatest figures of the Prairie movement
+            in architecture and landscape: Frank Lloyd Wright and Jens Jensen.
+          </p>
+          <p>
+            Jensen was the foremost Prairie landscape architect of the period — a Danish-born
+            designer who had developed a rigorous philosophy of naturalistic planting using
+            native Midwestern species. Where Wright organized space through geometry and
+            the manipulation of the horizontal plane, Jensen organized it through the layered
+            ecology of the prairie edge: hawthorn and crabapple at the wood margin, native
+            grasses and wildflowers in the open, the savanna structure of the Illinois
+            landscape made legible and habitable. The two men were colleagues and mutual
+            admirers working in the same cultural moment.
+          </p>
+          <p>
+            The planting plan shows Jensen's naturalistic scheme framing the Scheme 1 house
+            footprint — extensive plantings along the ravine edge and the estate's approach
+            from Sylvan Road, with the agricultural and farming areas to the south left more
+            open. The plan is held in Jensen's papers at the Bentley Historical Library,
+            University of Michigan.
+          </p>
+        </div>
+        <div class="jensen-plan">
+          <a href="/images/scheme-1/planting-plan.jpg" class="glightbox" data-gallery="scheme1-jensen" data-description="Planting Plan for Grounds of Mr. Sherman M. Booth, Glencoe, Illinois — Jens Jensen, c. 1911. Held in the Jens Jensen Papers, Bentley Historical Library, University of Michigan.">
+            <div class="jensen-plan-img">
+              <img src="/images/scheme-1/planting-plan.jpg" alt="Jens Jensen planting plan for the Booth estate grounds, c. 1911" loading="lazy" />
+            </div>
+            <p class="perspective-label">Planting Plan · Jens Jensen · Bentley Historical Library, U of Michigan</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Continuity -->
+  <section class="scheme-section scheme-section--light">
+    <div class="container">
+      <div class="continuity-inner">
+        <h2 class="scheme-section-title scheme-section-title--dark">What Carried Through</h2>
+        <div class="continuity-text">
+          <p>
+            When the budget reality became clear, Wright did not simply scale the design down.
+            He reconceived it — designing around two existing structures already on the Booth
+            property, a stable and a gardener's cottage, adapted and woven into a new main core.
+            The result was Scheme 2: the house that was built between 1915 and 1916, and that
+            stands at 265 Sylvan Road today.
+          </p>
+          <p>
+            Comparing the two schemes reveals what Wright considered essential. The square
+            geometric grammar appears in both — the same angular precision that governs the
+            floor plan modules in Scheme 1 runs through every detail of the built house.
+            The central stair tower, visible as a vertical accent in the Scheme 1 perspectives,
+            survives and is amplified in Scheme 2 — in the built house it rises four stories
+            above the ravine floor, the most distinctive element of the design. The relationship
+            to the ravine landscape, established in the site plan and Jensen planting plan,
+            is honored in the orientation and siting of the built house.
+          </p>
+          <p>
+            What was lost was the horizontal sprawl — the long pergola walkways, the subsidiary
+            wings, the estate scale. Scheme 2 compensates by going vertical where Scheme 1 went
+            horizontal: the same spatial ambition, achieved through completely different means.
+            The unbuilt design is not a failed version of the built one. It is an alternate
+            answer to the same question — what Wright could do with this site, this client,
+            and this landscape.
+          </p>
+        </div>
+        <div class="continuity-cta">
+          <a href="/#history" class="continuity-link">
+            Read about the built house — Scheme 2 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="scheme-footer">
+    <div class="container scheme-footer-inner">
+      <a href="/" class="footer-back">← Return to The Booth House</a>
+      <p class="footer-copy">&copy; {new Date().getFullYear()} · All rights reserved</p>
+    </div>
+  </footer>
+
+</Layout>
+
+<style>
+  /* ---- Nav ---- */
+  .scheme-nav {
+    background: var(--color-bg-dark);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .scheme-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .scheme-nav-back {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    transition: color 0.2s;
+  }
+
+  .scheme-nav-back:hover { color: var(--color-white); }
+
+  .scheme-nav-label {
+    font-size: var(--text-xs);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ---- Hero ---- */
+  .scheme-hero {
+    position: relative;
+    height: 70vh;
+    min-height: 480px;
+    max-height: 700px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .scheme-hero-img-wrap {
+    position: absolute;
+    inset: 0;
+  }
+
+  .scheme-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    filter: sepia(20%) contrast(1.05);
+  }
+
+  .scheme-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(20,16,12,0.2) 0%, rgba(20,16,12,0.75) 100%);
+  }
+
+  .scheme-hero-content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: var(--space-lg);
+  }
+
+  .scheme-hero-content .section-label {
+    color: var(--color-accent-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .scheme-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 300;
+    color: var(--color-white);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .scheme-eyebrow {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.75rem;
+  }
+
+  /* ---- Intro ---- */
+  .scheme-intro-section {
+    background: var(--color-bg);
+    padding: var(--space-xl) 0;
+  }
+
+  .scheme-intro-inner {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: var(--space-xl);
+    align-items: start;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .scheme-intro-text p {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+  }
+
+  .drop-cap::first-letter {
+    font-size: 4.5rem;
+    line-height: 0.8;
+    float: left;
+    margin-right: 0.1em;
+    margin-top: 0.08em;
+    font-family: var(--font-serif);
+    color: var(--color-accent);
+    font-weight: 400;
+  }
+
+  .scheme-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: var(--space-md);
+    border-left: 1px solid var(--color-border);
+    position: sticky;
+    top: calc(3rem + var(--space-md));
+  }
+
+  .aside-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .aside-num {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    font-weight: 400;
+    color: var(--color-accent);
+  }
+
+  .aside-label {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  /* ---- Sections ---- */
+  .scheme-section {
+    padding: var(--space-xl) 0;
+  }
+
+  .scheme-section--dark {
+    background: var(--color-bg-dark);
+  }
+
+  .scheme-section--light {
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .scheme-section-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    font-weight: 300;
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .scheme-section-title--dark {
+    color: var(--color-text);
+  }
+
+  .scheme-section-intro {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.65);
+    max-width: var(--content-width);
+    margin: 0 auto var(--space-lg);
+  }
+
+  .scheme-section-intro--dark {
+    color: var(--color-text-muted);
+  }
+
+  /* ---- Perspectives grid ---- */
+  .perspectives-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .perspective-item--wide {
+    grid-column: 1 / -1;
+  }
+
+  .perspective-item {
+    display: block;
+    cursor: zoom-in;
+  }
+
+  .perspective-img-wrap {
+    overflow: hidden;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .perspective-item--wide .perspective-img-wrap {
+    aspect-ratio: 21/9;
+  }
+
+  .perspective-item:not(.perspective-item--wide) .perspective-img-wrap {
+    aspect-ratio: 4/3;
+  }
+
+  .perspective-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.3s;
+    opacity: 0.88;
+    filter: sepia(10%);
+  }
+
+  .perspective-item:hover .perspective-img-wrap img {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+
+  .perspective-label {
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  /* ---- Plans grid ---- */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .plan-item {
+    display: block;
+    cursor: zoom-in;
+  }
+
+  .plan-img-wrap {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: #f5f2ee;
+    border: 1px solid var(--color-border);
+  }
+
+  .plan-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .plan-item:hover .plan-img-wrap img {
+    transform: scale(1.03);
+  }
+
+  .plan-label {
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  /* ---- Jensen ---- */
+  .jensen-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  .jensen-text p {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 1.25rem;
+  }
+
+  .jensen-plan {
+    display: block;
+  }
+
+  .jensen-plan-img {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: rgba(255,255,255,0.04);
+    cursor: zoom-in;
+  }
+
+  .jensen-plan-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    opacity: 0.9;
+    filter: sepia(15%);
+  }
+
+  a:hover .jensen-plan-img img {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+
+  /* ---- Continuity ---- */
+  .continuity-inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .continuity-text p {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+  }
+
+  .continuity-cta {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .continuity-link {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    transition: color 0.2s;
+  }
+
+  .continuity-link:hover {
+    color: var(--color-text);
+  }
+
+  /* ---- Footer ---- */
+  .scheme-footer {
+    background: var(--color-bg-dark);
+    padding: var(--space-md) 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .scheme-footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .footer-back {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    transition: color 0.2s;
+  }
+
+  .footer-back:hover { color: var(--color-white); }
+
+  .footer-copy {
+    font-size: var(--text-xs);
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.04em;
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 900px) {
+    .scheme-intro-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .scheme-aside {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-left: none;
+      border-top: 1px solid var(--color-border);
+      padding-left: 0;
+      padding-top: var(--space-md);
+      position: static;
+    }
+
+    .plans-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .plans-grid .plan-item:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .jensen-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .perspectives-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .perspective-item--wide {
+      grid-column: 1;
+    }
+
+    .perspective-item--wide .perspective-img-wrap {
+      aspect-ratio: 16/9;
+    }
+
+    .plans-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .plans-grid .plan-item:last-child {
+      grid-column: 1;
+    }
+
+    .scheme-nav-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .scheme-footer-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

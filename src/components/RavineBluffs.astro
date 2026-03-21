@@ -101,13 +101,13 @@ const houses = [
         </p>
       </div>
 
-      <!-- Map placeholder -->
-      <div class="ravine-map-placeholder">
-        <div class="map-inner">
-          <p class="map-label">Sylvan Road, Glencoe, Illinois</p>
-          <p class="map-sub">Drop a neighborhood map image into<br/><code>public/images/ravine/map.jpg</code></p>
-        </div>
-      </div>
+      <!-- Map -->
+      <figure class="ravine-map">
+        <a href="/images/ravine/map.jpg" class="glightbox" data-description="Ravine Bluffs, Glencoe, Illinois — plat map showing the Booth development lots, Sylvan Road, Meadow Road, and the surrounding neighborhood. Landscaping by Jens Jensen. Sherman M. Booth, Owner.">
+          <img src="/images/ravine/map.jpg" alt="Ravine Bluffs Development plat map, Glencoe, Illinois" />
+        </a>
+        <figcaption>Ravine Bluffs plat map · Landscaping by Jens Jensen · Sherman M. Booth, Owner</figcaption>
+      </figure>
     </div>
 
     <!-- House index -->
@@ -178,39 +178,37 @@ const houses = [
     margin-bottom: 1.25rem;
   }
 
-  /* Map placeholder — replace with a real map image */
-  .ravine-map-placeholder {
-    aspect-ratio: 3/4;
-    background: rgba(255,255,255,0.05);
+  /* Map */
+  .ravine-map {
+    margin: 0;
+  }
+
+  .ravine-map a {
+    display: block;
+    overflow: hidden;
     border: 1px solid rgba(255,255,255,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    cursor: zoom-in;
   }
 
-  .map-inner {
-    padding: 2rem;
+  .ravine-map img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease, opacity 0.3s;
+    opacity: 0.9;
   }
 
-  .map-label {
-    font-family: var(--font-serif);
-    font-size: var(--text-lg);
-    color: var(--color-white);
-    margin-bottom: 1rem;
+  .ravine-map a:hover img {
+    transform: scale(1.03);
+    opacity: 1;
   }
 
-  .map-sub {
-    font-size: var(--text-sm);
-    color: rgba(255,255,255,0.4);
-    line-height: 1.6;
-  }
-
-  .map-sub code {
+  .ravine-map figcaption {
     font-size: var(--text-xs);
-    background: rgba(255,255,255,0.08);
-    padding: 0.2em 0.4em;
-    border-radius: 2px;
+    letter-spacing: 0.06em;
+    color: rgba(255,255,255,0.35);
+    margin-top: 0.6rem;
+    font-style: italic;
   }
 
   /* House index */
@@ -341,8 +339,5 @@ const houses = [
       grid-template-columns: 1fr;
     }
 
-    .ravine-map-placeholder {
-      aspect-ratio: 16/9;
-    }
   }
 </style>

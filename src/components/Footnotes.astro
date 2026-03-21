@@ -1,0 +1,147 @@
+---
+const footnotes = [
+  {
+    n: 1,
+    citation: "Storrer, William Allin. <em>The Architecture of Frank Lloyd Wright: A Complete Catalog</em> (4th ed.). University of Chicago Press, 2006. ISBN 978-0-226-77620-6.",
+  },
+  {
+    n: 2,
+    citation: "Frank Lloyd Wright Foundation Archives (FLW 1502). <em>Sherman M. Booth House, Glencoe, Illinois — Scheme 2: Study Images and Correspondence.</em> Avery Architectural &amp; Fine Arts Library, Columbia University.",
+  },
+  {
+    n: 3,
+    citation: "Gill, Brendan. <em>Many Masks: A Life of Frank Lloyd Wright</em>. Putnam, New York, 1987. ISBN 978-0-399-13232-8.",
+  },
+  {
+    n: 4,
+    citation: "Pfeiffer, Bruce Brooks; Gössel, Peter (eds.). <em>Frank Lloyd Wright: Complete Works, Vol. 1, 1885–1916</em>. Taschen, 2009. ISBN 978-3-8365-0927-5.",
+  },
+  {
+    n: 5,
+    citation: "Nute, Kevin. <em>Frank Lloyd Wright and Japan: The Role of Traditional Japanese Art and Architecture in the Work of Frank Lloyd Wright</em>. Van Nostrand Reinhold / Routledge, 1993. ISBN 978-0-442-01419-0.",
+  },
+  {
+    n: 6,
+    citation: "U.S. Department of the Interior, National Park Service. <em>National Register of Historic Places Registration: Ravine Bluffs Development</em> (NRHP Reference No. 78001137). Listed 1978.",
+  },
+  {
+    n: 7,
+    citation: "\"Biographical Sketch of Elizabeth K. Booth.\" <em>Alexander Street Documents.</em> documents.alexanderstreet.com/d/1009639930.",
+  },
+  {
+    n: 8,
+    citation: "Suffrage 2020 Illinois. \"Elizabeth Knox Booth.\" suffrage2020illinois.org/elizabeth-knox-booth/.",
+  },
+  {
+    n: 9,
+    citation: "<em>Ableman v. Booth</em>, 62 U.S. 506 (1859). United States Supreme Court.",
+  },
+  {
+    n: 10,
+    citation: "Cook County Recorder of Deeds. Warranty Deed, Elizabeth Booth to Julius and Elinor Abler, August 1958. Sale price: $38,500.",
+  },
+  {
+    n: 11,
+    citation: "Glencoe Historical Society. Sherman M. Booth portrait photograph. glencoehistory.org.",
+  },
+  {
+    n: 12,
+    citation: "Hitchcock, Henry-Russell. <em>In the Nature of Materials: The Buildings of Frank Lloyd Wright, 1887–1941</em>. Duell, Sloan and Pearce, New York, 1942.",
+  },
+  {
+    n: 13,
+    citation: "U.S. Library of Congress, Historic American Engineering Record. <em>Ravine Bluffs Development Bridge</em> (HAER IL-14). loc.gov/item/il0461/.",
+  },
+  {
+    n: 14,
+    citation: "\"Sherman Booth House.\" <em>Wikipedia.</em> en.wikipedia.org/wiki/Sherman_Booth_House.",
+  },
+  {
+    n: 15,
+    citation: "\"Ravine Bluffs Development.\" <em>Wikipedia.</em> en.wikipedia.org/wiki/Ravine_Bluffs_Development.",
+  },
+  {
+    n: 16,
+    citation: "Heinz, Thomas A. <em>Frank Lloyd Wright Field Guide: Northern Illinois, Wisconsin, Minnesota</em>. Academy Editions, 1996. ISBN 978-1-85490-454-8.",
+  },
+  {
+    n: 17,
+    citation: "Betsky, Aaron; Shapiro, Gideon Fink; Pielage, Andrew. <em>50 Lessons to Learn from Frank Lloyd Wright</em>. Rizzoli, New York, 2021. ISBN 978-0-8478-6536-9.",
+  },
+  {
+    n: 18,
+    citation: "RISD Museum (Rhode Island School of Design). <em>Library Table</em> (accession no. 2004.28). risdmuseum.org/art-design/collection/library-table-200428. — Wright-designed library table from the Booth House commission, in the RISD permanent collection.",
+  },
+];
+---
+
+<section class="footnotes" id="footnotes">
+  <div class="container">
+    <div class="fn-inner">
+      <p class="fn-heading">Notes &amp; Sources</p>
+      <ol class="fn-list">
+        {footnotes.map((fn) => (
+          <li id={`fn-${fn.n}`} class="fn-item">
+            <span class="fn-num">{fn.n}</span>
+            <span class="fn-text" set:html={fn.citation}></span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<style>
+  .footnotes {
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+  }
+
+  .fn-inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .fn-heading {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .fn-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .fn-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+  }
+
+  .fn-num {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--color-accent);
+    min-width: 1.5rem;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+  }
+
+  .fn-text {
+    font-size: var(--text-xs);
+    font-family: var(--font-sans);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+</style>
