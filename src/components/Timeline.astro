@@ -1,0 +1,231 @@
+---
+const events = [
+  {
+    year: "1854",
+    title: "Ableman v. Booth",
+    body: "Sherman Miller Booth I, editor of the Milwaukee abolitionist newspaper The Free Democrat, rallies nearly 5,000 people to the courthouse square in Milwaukee and helps the escaped slave Joshua Glover flee to freedom in Canada. The case works its way to the United States Supreme Court as Ableman v. Booth (1859), a landmark ruling on state versus federal power. The father's legacy will shape his son's understanding of law as a moral instrument."
+  },
+  {
+    year: "1901",
+    title: "Wright and the Prairie",
+    body: "Frank Lloyd Wright publishes 'A Home in a Prairie Town' in the February 1901 Ladies' Home Journal — his first public articulation of the Prairie house as a distinctly American form. A second article follows in July. Wright is 33 years old and working from his studio in Oak Park, Illinois. The Prairie style he is developing will define the decade."
+  },
+  {
+    year: "1905",
+    title: "The Glasner House",
+    body: "Wright designs the William A. Glasner House at 850 Sheridan Road in Glencoe — his first commission in the village. The one-story house, nestled into a bluff above a steep ravine, features three octagonal rooms and the celebrated 'Tree of Life' casement windows with iridescent yellow-green and orange glass. Architectural historians later identify it as a precursor to Fallingwater for its integration with its site."
+  },
+  {
+    year: "1906",
+    title: "The Japanese Influence",
+    body: "Wright presents an exhibition of Utagawa Hiroshige woodblock prints at the Art Institute of Chicago — part of a lifelong obsession with Japanese art that had begun in the 1890s. He had collected over 560 ukiyo-e prints. He later identified three formative influences on his architecture: the Froebel educational blocks of his childhood, his mentor Louis Sullivan, and the Japanese woodblock print. The prints reinforced what he was already pursuing: horizontal composition, the dissolution of the boundary between inside and outside, and buildings that grow from their landscape. Japanese buildings 'were built from simple materials; they were low and horizontal; but above all they were designed in harmony with nature.'"
+  },
+  {
+    year: "1907",
+    title: "A Fireproof House for $5,000",
+    body: "Wright publishes his third and final Ladies' Home Journal design: 'A Fireproof House for $5,000.' The compact 30-foot-square two-story plan, with identical facades on all four sides and an innovative thermal air-circulation system, is designed for broad middle-class accessibility. Eight years later, Wright will adapt this exact plan for the five Ravine Bluffs rental houses on Meadow Road."
+  },
+  {
+    year: "1909",
+    title: "Wright Leaves Oak Park",
+    body: "In September 1909, Frank Lloyd Wright closes his Oak Park studio and sails for Germany, leaving his wife and six children behind. In Berlin, he oversees the production of the Wasmuth Portfolio — a landmark two-volume folio of 100 lithographs of his work, published in 1910–11 by the publisher Ernst Wasmuth. Sherman Booth handles the American legal and distribution matters for the Portfolio."
+  },
+  {
+    year: "1910",
+    title: "First Contact",
+    body: "Correspondence to Darwin Martin dated January 1910 — written aboard the R.M.S. Lusitania en route to Germany — mentions the upcoming Booth commission. Sherman Booth has already engaged Wright during one of the most turbulent periods of the architect's personal life. A letter from the same period notes the site in Glencoe and Booth's vision for a residential development around a ravine."
+  },
+  {
+    year: "1911",
+    title: "Scheme I and the Footbridge",
+    body: "Wright and Booth conceive Scheme I: an elaborate residential compound with a bridge spanning the ravine, priced at $125,000 — nearly four times Booth's budget of $30–35,000. In December, newspapers cover the public scandal of Wright's affair with Mamah Borthwick; Booth represents both Wright and his estranged wife Catherine. While awaiting their main house, the Booths live in a Wright-designed bungalow across the ravine, connected to the main property by a swinging footbridge."
+  },
+  {
+    year: "1913",
+    title: "Japan and Midway Gardens",
+    body: "Wright travels to Tokyo to meet Aisaku Hayashi, managing director of the Imperial Hotel, to discuss the commission for a new hotel building. He spends months touring Japan — visiting the Higashi Hongan-ji temple in Nagoya, the gardens of Kyoto, and Shinto shrines — absorbing the spatial principles he had long studied through prints. Simultaneously in Chicago, he begins design of Midway Gardens, an elaborate outdoor entertainment complex on the South Side. Its decorative program — patterned concrete, sculpted figures, geometric ornament — draws directly on the visual language of Japanese design and flows concurrently into his Prairie work of this period, including Ravine Bluffs."
+  },
+  {
+    year: "1912",
+    title: "Elizabeth and the Vote",
+    body: "Elizabeth Knox Booth organizes and becomes the first president of the Glencoe Equal Suffrage Association. The following year she is elected Chairman of the Legislative Department of the Illinois Equal Suffrage Association, where she develops an intricate index-card tracking system for every member of the state House and Senate — cataloguing suffrage pledges and voting histories to guide the campaign's legislative strategy."
+  },
+  {
+    year: "1913",
+    title: "Illinois First",
+    body: "On June 26, 1913, Elizabeth Booth is present in Springfield when Governor Edward F. Dunne signs the Illinois women's suffrage bill. With his signature, Illinois becomes the first state east of the Mississippi River to grant women the right to vote for President — seven years before the Nineteenth Amendment. Wright designs the one-story Booth Cottage this same year as temporary housing for the family while the main house is under construction."
+  },
+  {
+    year: "1914",
+    title: "Tragedy at Taliesin",
+    body: "On August 15, 1914, while Wright is in Chicago overseeing the rushed construction of Midway Gardens, a servant at Taliesin sets fire to the building and kills seven people with a hatchet — including Mamah Borthwick and her two children. Wright returns to Spring Green to find the house destroyed and the woman he loved dead. He rebuilds immediately, channeling grief into architecture. Taliesin II rises from the ruins. The Ravine Bluffs commission continues: Booth House design work intensifies through 1914 and into 1915. That Wright could sustain a client relationship and produce detailed designs of this complexity in these years speaks to both the depth of the Booth friendship and his extraordinary capacity for work under duress."
+  },
+  {
+    year: "1915",
+    title: "Scheme II",
+    body: "With Scheme I far beyond budget, Wright redesigns around two existing structures already on the site — a stable and a gardener's cottage — adapting them into the final house. All furniture, light fixtures, and hardware are part of the commission: five twin-sized beds, a dining table, two host chairs, eight side chairs, and a dressing table. The five rental houses and bridge are designed simultaneously."
+  },
+  {
+    year: "1916",
+    title: "Imperial Hotel and Booth House",
+    body: "In March 1916, Hayashi travels to the United States and formally awards Wright the Imperial Hotel commission — the most ambitious project of Wright's career to date, designed as a hybrid of Japanese and Western architecture, with an elaborate decorative scheme of patterned concrete and carved oya stone. Wright departs for Japan later that year. The Booth House is completed during this same period: its square geometry, its integration of structure and ornament, and its careful attention to light and material all reflect an architect at the peak of his Japanese engagement. The two projects are separated by an ocean but unified by the same creative mind working through the same set of ideas."
+  },
+  {
+    year: "1916",
+    title: "Construction Complete",
+    body: "The Booth House at 265 Sylvan Road is completed: four stories, a grand 22-by-36-foot living room, four fireplaces including one on the rooftop deck, art glass windows, built-in bookshelves, and Wright-designed hardware throughout. The five rental houses on Meadow Road and the Perry House on Sylvan Lane are also completed, along with the 80-foot concrete bridge and three entrance sculptures."
+  },
+  {
+    year: "1940s",
+    title: "Family Life",
+    body: "The house remains in the Booth family. Knox, Sherman III, and Betty grow up at 265 Sylvan Road, attending North Shore Country Day School. Elizabeth serves on the Glencoe Board of Education. The original Wright light fixtures, beds, and hardware remain in daily use. Sherman Booth dies in 1956."
+  },
+  {
+    year: "1958",
+    title: "Change of Hands",
+    body: "Elizabeth Booth sells the property to Julius and Elinor Abler in August 1958 for $38,500. The Ablers later subdivide the property and transfer the house to Northwestern University. The sale price — less than 30% of the original construction estimate for Scheme I — underscores how dramatically values had shifted in four decades."
+  },
+  {
+    year: "1967",
+    title: "Bloch Stewardship Begins",
+    body: "Theodore and Sonia Bloch purchase the Sherman Booth House, beginning a decades-long stewardship. They undertake careful structural and cosmetic restoration, remove a deteriorated garage, and — working with Chicago architect Masami Takayama — create a new carport that incorporates Wright's original decorative screens. Two of Wright's five original twin beds and most of his hardware remain in place."
+  },
+  {
+    year: "1978",
+    title: "National Register",
+    body: "The Ravine Bluffs Development is listed on the National Register of Historic Places (NRHP reference #78001137), recognized as one of Wright's most ambitious and intact residential ensembles. The listing encompasses all six houses, the bridge, and the three concrete entrance sculptures along Sylvan Road and Meadow Road."
+  },
+  {
+    year: "2020",
+    title: "The Cottage Moves",
+    body: "The 1913 Booth Cottage — a one-story flat-roofed structure that architectural historians consider a proto-Usonian design predating Wright's later Usonian houses by two decades — is rescued from demolition after a $300,000+ fundraising campaign. On July 21, the Glencoe Historical Society physically relocates the cottage from its original Ravine Bluffs site to Park 7N on a 99-year land lease at $1 per year, where it will open as a museum and research center."
+  },
+  {
+    year: "Today",
+    title: "Living Legacy",
+    body: "The Booth House continues as a private residence in careful hands. Original Wright light fixtures, door hardware, and two of the five Wright-designed twin beds remain in place. The Ravine Bluffs Development is an intact, lived-in neighborhood — a Prairie ensemble unlike any other — and the 1913 Booth Cottage, now being restored at Ravine Bluffs Park, is preparing to open as a museum dedicated to Wright's work in Glencoe."
+  },
+];
+---
+
+<section class="timeline" id="timeline">
+  <div class="container">
+    <div class="timeline-header">
+      <p class="section-label">Timeline</p>
+      <h2 class="section-title">A Century of History</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="timeline-track">
+      {events.map((event, i) => (
+        <div class={`timeline-event ${i % 2 === 0 ? 'left' : 'right'}`}>
+          <div class="timeline-content">
+            <span class="timeline-year">{event.year}</span>
+            <h3 class="timeline-title">{event.title}</h3>
+            <p class="timeline-body">{event.body}</p>
+          </div>
+          <div class="timeline-node"></div>
+        </div>
+      ))}
+      <div class="timeline-line"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    background: #F0EBE3;
+  }
+
+  .timeline-header {
+    max-width: var(--content-width);
+    margin: 0 auto var(--space-lg);
+  }
+
+  .timeline-track {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--color-border);
+    transform: translateX(-50%);
+  }
+
+  .timeline-event {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 2.5rem);
+    margin-bottom: var(--space-lg);
+  }
+
+  .timeline-event.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 2.5rem);
+  }
+
+  .timeline-content {
+    max-width: 340px;
+  }
+
+  .timeline-year {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    font-weight: 300;
+    color: var(--color-accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-body {
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    font-weight: 300;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+  }
+
+  .timeline-node {
+    position: absolute;
+    left: 50%;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    transform: translateX(-50%);
+    border: 2px solid #F0EBE3;
+    box-shadow: 0 0 0 3px var(--color-accent);
+  }
+
+  @media (max-width: 700px) {
+    .timeline-line { left: 1rem; }
+
+    .timeline-event,
+    .timeline-event.right {
+      padding: 0 0 0 3rem;
+      justify-content: flex-start;
+    }
+
+    .timeline-node { left: 1rem; }
+
+    .timeline-content { max-width: 100%; }
+  }
+</style>

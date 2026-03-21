@@ -1,0 +1,132 @@
+---
+const photos = [
+  { src: "/images/lego/lego-01.jpg", caption: "Lego model — front elevation showing Prairie proportions and horizontal massing" },
+  { src: "/images/lego/lego-02.jpg", caption: "Lego model — complete layout view" },
+  { src: "/images/lego/lego-03.jpg", caption: "Lego model — first floor plan layout" },
+];
+---
+
+<section class="lego" id="lego">
+  <div class="container">
+    <div class="lego-header">
+      <p class="section-label">In Miniature</p>
+      <h2 class="section-title">A Lego Tribute</h2>
+      <div class="divider"></div>
+      <p class="lego-intro">
+        A hand-built Lego model of the Booth House — capturing Wright's signature horizontal
+        lines, cantilevered eaves, and Prairie proportions brick by brick.
+      </p>
+    </div>
+
+    <div class="lego-layout">
+      <!-- Hero lego shot -->
+      <a href={photos[0].src} class="glightbox lego-hero-img" data-gallery="lego" data-description={photos[0].caption}>
+        <img src={photos[0].src} alt={photos[0].caption} />
+        <div class="lego-hero-caption">{photos[0].caption}</div>
+      </a>
+
+      <!-- Secondary grid -->
+      <div class="lego-grid">
+        {photos.slice(1).map(photo => (
+          <a href={photo.src} class="glightbox lego-thumb" data-gallery="lego" data-description={photo.caption}>
+            <img src={photo.src} alt={photo.caption} loading="lazy" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .lego {
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .lego-header {
+    max-width: var(--content-width);
+    margin: 0 auto var(--space-lg);
+  }
+
+  .lego-intro {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-top: calc(-1 * var(--space-sm));
+  }
+
+  .lego-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .lego-hero-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: var(--color-border);
+  }
+
+  .lego-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .lego-hero-img:hover img {
+    transform: scale(1.03);
+  }
+
+  .lego-hero-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 1rem 0.75rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.5));
+    color: white;
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .lego-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .lego-thumb {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: var(--color-border);
+  }
+
+  .lego-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .lego-thumb:hover img {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .lego-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .lego-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

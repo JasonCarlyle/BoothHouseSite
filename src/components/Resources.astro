@@ -1,0 +1,261 @@
+---
+const groups = [
+  {
+    label: "This House",
+    links: [
+      {
+        title: "Sherman Booth House — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Sherman_Booth_House",
+        description: "Wikipedia article on the house, covering its history, design, and significance within Wright's Prairie period.",
+      },
+      {
+        title: "Booth House — Frank Lloyd Wright Building Conservancy",
+        url: "https://savewright.org/building/booth-house/",
+        description: "The Conservancy's entry on the Booth House, with preservation status and archival resources.",
+      },
+      {
+        title: "Sherman Booth House #132 — Andrew Pielage Photography",
+        url: "https://www.apizm.com/blog/frank-lloyd-wrights-sherman-booth-house",
+        description: "Andrew Pielage's field notes and photographs from the #500fllwproject visit to 265 Sylvan Road.",
+      },
+    ],
+  },
+  {
+    label: "The Ravine Bluffs Development",
+    links: [
+      {
+        title: "Ravine Bluffs Development — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Ravine_Bluffs_Development",
+        description: "Full Wikipedia article on the development, covering all six houses, the bridge, and the sculptures.",
+      },
+      {
+        title: "Ravine Bluffs Bridge &amp; Sculptures — Frank Lloyd Wright Building Conservancy",
+        url: "https://savewright.org/building/ravine-bluffs-bridge-and-sculptures/",
+        description: "The Conservancy's entry on the bridge and concrete sculptures, with preservation history.",
+      },
+      {
+        title: "Ravine Bluffs Development Bridge — Library of Congress (HAER IL-14)",
+        url: "https://www.loc.gov/item/il0461/",
+        description: "Historic American Engineering Record documentation of the Sylvan Road bridge, including measured drawings and archival photographs.",
+      },
+      {
+        title: "Wright in Glencoe — wrightinglencoe.org",
+        url: "http://www.wrightinglencoe.org/ravine-bluffs-history/",
+        description: "Neighborhood-level history of the Ravine Bluffs Development with walking tour context.",
+      },
+    ],
+  },
+  {
+    label: "Archives &amp; Primary Sources",
+    links: [
+      {
+        title: "Frank Lloyd Wright at Avery — Columbia University Libraries",
+        url: "https://library.columbia.edu/libraries/avery/franklloydwright.html",
+        description: "Avery Library holds the world's largest Wright archival collection: 23,000 architectural drawings, 44,000 photographs, and extensive correspondence. The Ravine Bluffs commission drawings are held here. Researchers may apply for access through the Special Collections Reading Room.",
+      },
+      {
+        title: "Wright Archival Collections — Columbia University",
+        url: "https://library.columbia.edu/libraries/avery/franklloydwright/collections.html",
+        description: "Finding aids and collection guides for the Frank Lloyd Wright Foundation Archives at Avery, co-acquired with MoMA in 2012.",
+      },
+      {
+        title: "Frank Lloyd Wright Collection — Avery Drawings &amp; Archives",
+        url: "https://library.columbia.edu/libraries/avery/drawings-archives/FrankLloydWrightCollection.html",
+        description: "Direct access to the Wright drawing collection, including thousands of plans available digitally through JSTOR.",
+      },
+      {
+        title: "Frank Lloyd Wright Research Guide — Columbia University Libraries",
+        url: "https://guides.library.columbia.edu/frank-lloyd-wright",
+        description: "A comprehensive research guide to all Wright archival holdings at Avery, with guidance for visiting researchers.",
+      },
+    ],
+  },
+  {
+    label: "Frank Lloyd Wright",
+    links: [
+      {
+        title: "Frank Lloyd Wright Foundation",
+        url: "https://franklloydwright.org",
+        description: "The Foundation's official site, including Wright's biography, his work, and the archives at Taliesin West.",
+      },
+      {
+        title: "Frank Lloyd Wright Building Conservancy",
+        url: "https://savewright.org",
+        description: "The organization dedicated to preserving Wright's built work, with entries on every extant structure including all Ravine Bluffs houses.",
+      },
+      {
+        title: "Frank Lloyd Wright Trust",
+        url: "https://flwright.org",
+        description: "Operates Wright's historic Chicago properties (Unity Temple, Robie House) and maintains educational resources on the Prairie style.",
+      },
+      {
+        title: "Frank Lloyd Wright and Japan — Frank Lloyd Wright Foundation",
+        url: "https://franklloydwright.org/frank-lloyd-wright-and-japan/",
+        description: "An overview of Wright's lifelong engagement with Japanese art and architecture — essential context for the Booth House commission years.",
+      },
+    ],
+  },
+  {
+    label: "Photography",
+    links: [
+      {
+        title: "Andrew Pielage Photography — apizm.com",
+        url: "https://www.apizm.com/",
+        description: "Andrew Pielage is an architectural photographer based in Phoenix, Arizona, on a mission to photograph all surviving Frank Lloyd Wright buildings worldwide. The 2024 Booth House photographs on this site are from his #500fllwproject. He teaches photography workshops at Taliesin, Fallingwater, and other Wright sites.",
+      },
+      {
+        title: "Andrew Pielage — Architectural Digest Feature",
+        url: "https://www.architecturaldigest.com/story/frank-lloyd-wright-photographer-andrew-pielage",
+        description: "Architectural Digest feature on Pielage's #500fllwproject and his approach to photographing Wright's buildings.",
+      },
+    ],
+  },
+  {
+    label: "Glencoe",
+    links: [
+      {
+        title: "Glencoe Historical Society",
+        url: "https://glencoehistory.org/",
+        description: "Stewards of the Booth Cottage and the primary repository for local historical records on the Booth family and the Ravine Bluffs neighborhood.",
+      },
+      {
+        title: "Glencoe's Architecture — Village of Glencoe Preservation Commission",
+        url: "https://www.villageofglencoe.org/government/committees___commissions/preservation_commission/glencoes_architecture.php",
+        description: "The Village's overview of Glencoe's architectural heritage, including the Historic Architectural Survey of ~330 properties.",
+      },
+      {
+        title: "William A. Glasner House — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/William_A._Glasner_House",
+        description: "Wikipedia article on Wright's 1905 Glencoe commission — the Tree of Life windows, octagonal rooms, and its significance as a precursor to Fallingwater.",
+      },
+    ],
+  },
+];
+---
+
+<section class="resources" id="resources">
+  <div class="container">
+    <div class="resources-header">
+      <p class="section-label">Further Reading</p>
+      <h2 class="section-title">Resources &amp; Links</h2>
+      <div class="divider"></div>
+      <p class="resources-intro">
+        Primary sources, archives, scholarship, and organizations connected to the
+        Booth House, the Ravine Bluffs Development, and Frank Lloyd Wright's Prairie period.
+      </p>
+    </div>
+
+    <div class="resources-grid">
+      {groups.map((group) => (
+        <div class="resource-group">
+          <h3 class="group-label" set:html={group.label}></h3>
+          <ul class="link-list">
+            {group.links.map((link) => (
+              <li class="link-item">
+                <a href={link.url} target="_blank" rel="noopener" class="link-title">
+                  {link.title} →
+                </a>
+                <p class="link-desc">{link.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .resources {
+    background: var(--color-bg-dark);
+    color: rgba(255,255,255,0.85);
+  }
+
+  .resources .section-label {
+    color: var(--color-accent-light);
+  }
+
+  .resources .section-title {
+    color: var(--color-white);
+  }
+
+  .resources .divider {
+    background: var(--color-accent);
+  }
+
+  .resources-header {
+    max-width: var(--content-width);
+    margin: 0 auto var(--space-lg);
+  }
+
+  .resources-intro {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    margin-top: calc(-1 * var(--space-sm));
+  }
+
+  .resources-grid {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: var(--space-xl) var(--space-xl);
+  }
+
+  .group-label {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    margin-bottom: var(--space-md);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .link-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .link-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.2s;
+    line-height: 1.4;
+  }
+
+  .link-title:hover {
+    color: var(--color-accent-light);
+  }
+
+  .link-desc {
+    font-size: var(--text-sm);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .resources-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

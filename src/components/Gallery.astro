@@ -1,0 +1,247 @@
+---
+const photos = [
+  // Andrew Pielage shoot — October 8, 2024
+  { src: "/images/gallery/pielage/pielage-01.jpg", caption: "Front elevation — stucco tower and deep overhanging eaves. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-02.jpg", caption: "Tower and cantilevered second-floor porch. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-03.jpg", caption: "Garden-side elevation — lower wing and continuous roofline. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-04.jpg", caption: "Full composition from the garden, fall foliage. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-05.jpg", caption: "Original Wright wall sconce with art glass windows and vertical screen panel. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-06.jpg", caption: "Original Wright sconce detail — cast metal housing with frosted glass. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-07.jpg", caption: "Dining room — Wright-designed table and high-back side chairs with paired sconces. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-08.jpg", caption: "Dining room looking toward living room — Wright chairs, fireplace surround, and built-in shelving beyond. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-09.jpg", caption: "Main entry hall with central staircase, Wright sconces, and original hardwood floors. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-10.jpg", caption: "Living room with original brick fireplace and built-in shelving. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-11.jpg", caption: "Entry foyer staircase — Wright wood trim and hardwood floors. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-12.jpg", caption: "Front entry vestibule — art glass sidelights, Wright sconces, dining room beyond. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-13.jpg", caption: "Built-in bookshelves spanning a full wall with original vertical wood screen. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-14.jpg", caption: "Family room with brick fireplace and built-in display shelving. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-15.jpg", caption: "Enclosed north porch — full-height divided-light glass walls overlooking the ravine garden. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-16.jpg", caption: "North porch looking through glass walls to the ravine and garden beyond. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-17.jpg", caption: "North porch — natural light from three sides, ravine foliage in fall color. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-18.jpg", caption: "Original Wright floor lamp with casement windows and ravine views. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-19.jpg", caption: "Bedroom with original Wright-designed twin bed — one of two surviving originals. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-20.jpg", caption: "Bedroom built-in wardrobe with mirror panel — Wright's square geometry in millwork. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-21.jpg", caption: "Upper bedroom with brick fireplace, Wright bed frame, and corner windows. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  { src: "/images/gallery/pielage/pielage-22.jpg", caption: "Upper bedroom — original Wright bed, brick fireplace, and hardwood floors. Photo: Andrew Pielage, October 2024", group: "pielage" },
+  // Exterior — modern (2019 listing, photographer Tilton)
+  { src: "/images/gallery/exterior-01.jpg", caption: "Front façade, 265 Sylvan Road", group: "exterior" },
+  { src: "/images/gallery/exterior-02.jpg", caption: "South side elevation", group: "exterior" },
+  { src: "/images/gallery/exterior-03.jpg", caption: "Yard and approach from the south", group: "exterior" },
+  { src: "/images/gallery/exterior-04.jpg", caption: "East patio", group: "exterior" },
+  { src: "/images/gallery/exterior-05.jpg", caption: "Rear patio", group: "exterior" },
+  { src: "/images/gallery/exterior-06.jpg", caption: "Roof deck and upper tower", group: "exterior" },
+  { src: "/images/gallery/exterior-07.jpg", caption: "Carport with original Wright decorative screens", group: "exterior" },
+  // Interior — modern (2019 listing, photographer Tilton)
+  { src: "/images/gallery/interior-01.jpg", caption: "Living room — south end", group: "interior" },
+  { src: "/images/gallery/interior-02.jpg", caption: "Living room toward the hearth", group: "interior" },
+  { src: "/images/gallery/interior-03.jpg", caption: "Living room — north end", group: "interior" },
+  { src: "/images/gallery/interior-04.jpg", caption: "Dining room", group: "interior" },
+  { src: "/images/gallery/interior-05.jpg", caption: "Front entry hall", group: "interior" },
+  { src: "/images/gallery/interior-06.jpg", caption: "Entry detail", group: "interior" },
+  { src: "/images/gallery/interior-07.jpg", caption: "Original Wright light fixture and art glass window", group: "interior" },
+  { src: "/images/gallery/interior-08.jpg", caption: "Family room", group: "interior" },
+  { src: "/images/gallery/interior-09.jpg", caption: "Kitchen", group: "interior" },
+  // Historical — exterior (1916 and 1919)
+  { src: "/images/gallery/exterior-historical-01.jpg", caption: "Exterior from Gilman Lane, 1916", group: "historical" },
+  { src: "/images/gallery/exterior-historical-02.jpg", caption: "Exterior from Gilman Lane, 1916 — alternative view", group: "historical" },
+  { src: "/images/gallery/exterior-historical-03.jpg", caption: "The Booth House, 1919 — early photograph", group: "historical" },
+  // Historical — interior (Knox Booth photos, late 1930s/early 1940s)
+  { src: "/images/gallery/historical-01.jpg", caption: "First floor living room, c. 1940 — Knox Booth photograph", group: "historical" },
+  { src: "/images/gallery/historical-02.jpg", caption: "First floor dining room, c. 1940 — Knox Booth photograph", group: "historical" },
+  { src: "/images/gallery/historical-03.jpg", caption: "Exterior, c. 1940 — Knox Booth photograph", group: "historical" },
+  { src: "/images/gallery/historical-04.jpg", caption: "Exterior, c. 1940 — Knox Booth photograph, alternate view", group: "historical" },
+  // Furniture — Wright-designed originals
+  { src: "/images/gallery/furniture-01.jpg", caption: "Wright-designed dining room chairs — Chicago History Museum", group: "furniture" },
+  { src: "/images/gallery/furniture-02.jpg", caption: "Wright-designed library table from the Booth House", group: "furniture" },
+];
+---
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <p class="section-label">Gallery</p>
+      <h2 class="section-title">The House in Detail</h2>
+      <div class="divider"></div>
+      <p class="gallery-intro">
+        Photographs of the Booth House interior and exterior, capturing the light,
+        material, and proportion that define Wright's Prairie vision.
+      </p>
+      <p class="gallery-credit">
+        2024 photography by <a href="https://www.apizm.com/" target="_blank" rel="noopener" class="credit-link">Andrew Pielage</a> —
+        architectural photographer on a mission to document all surviving Frank Lloyd Wright buildings worldwide
+        (<a href="https://www.apizm.com/" target="_blank" rel="noopener" class="credit-link">#500fllwproject</a>).
+        Images used by permission; no commercial use without written consent.
+      </p>
+    </div>
+
+    <div class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pielage">Pielage 2024</button>
+      <button class="filter-btn" data-filter="exterior">Exterior</button>
+      <button class="filter-btn" data-filter="interior">Interior</button>
+      <button class="filter-btn" data-filter="historical">Historical</button>
+      <button class="filter-btn" data-filter="furniture">Furniture</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      {photos.map((photo, i) => (
+        <a
+          href={photo.src}
+          class="glightbox gallery-item"
+          data-gallery="house"
+          data-description={photo.caption}
+          data-group={photo.group}
+        >
+          <div class="gallery-thumb">
+            <img
+              src={photo.src}
+              alt={photo.caption}
+              loading={i < 4 ? "eager" : "lazy"}
+            />
+            <div class="gallery-caption">{photo.caption}</div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .gallery {
+    background: #F0EBE3;
+  }
+
+  .gallery-header {
+    max-width: var(--content-width);
+    margin: 0 auto var(--space-lg);
+  }
+
+  .gallery-intro {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-top: calc(-1 * var(--space-sm));
+    margin-bottom: 0.75rem;
+  }
+
+  .gallery-credit {
+    font-size: var(--text-sm);
+    font-family: var(--font-sans);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+
+  .credit-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .credit-link:hover {
+    color: var(--color-text);
+  }
+
+  .gallery-filter {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .filter-btn {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-white);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery-item {
+    display: block;
+    overflow: hidden;
+  }
+
+  .gallery-item.hidden {
+    display: none;
+  }
+
+  .gallery-thumb {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: var(--color-border);
+  }
+
+  .gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover .gallery-thumb img {
+    transform: scale(1.04);
+  }
+
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 1rem 0.75rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.6));
+    color: white;
+    font-size: var(--text-xs);
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .gallery-item:hover .gallery-caption {
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+  }
+</style>
+
+<script>
+  // Simple filter
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const items = document.querySelectorAll<HTMLAnchorElement>('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      items.forEach(item => {
+        const match = filter === 'all' || item.dataset.group === filter;
+        item.classList.toggle('hidden', !match);
+      });
+    });
+  });
+</script>

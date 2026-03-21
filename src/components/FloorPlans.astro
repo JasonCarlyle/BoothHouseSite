@@ -1,0 +1,148 @@
+---
+const plans = [
+  { src: "/images/floor-plans/plan-ground.jpg", label: "First Floor Plan", description: "Original Wright drawing — ground floor layout" },
+  { src: "/images/floor-plans/plan-upper.jpg", label: "Second & Third Floor Plan", description: "Original Wright drawing — upper floors, bedrooms & sleeping porch" },
+  { src: "/images/floor-plans/plan-basement.jpg", label: "Basement Plan", description: "Original Wright drawing — lower level" },
+  { src: "/images/floor-plans/elevation-east.jpg", label: "East & West Elevations", description: "Original Wright elevation drawing" },
+  { src: "/images/floor-plans/elevation-south.jpg", label: "North & South Elevations", description: "Original Wright elevation drawing with sections" },
+  { src: "/images/floor-plans/site-plan.jpg", label: "Site Plan", description: "Original site plan showing house position on the Ravine Bluffs parcel" },
+];
+---
+
+<section class="floor-plans" id="floor-plans">
+  <div class="container">
+    <div class="fp-header">
+      <p class="section-label">Architectural Drawings</p>
+      <h2 class="section-title">Original Floor Plans</h2>
+      <div class="divider"></div>
+      <p class="fp-intro">
+        Wright's original drawings for the Booth House, preserved from the Taliesin archives.
+        Click any drawing to view full-size.
+      </p>
+    </div>
+
+    <div class="fp-grid">
+      {plans.map(plan => (
+        <a href={plan.src} class="glightbox fp-item" data-gallery="plans" data-description={`${plan.label} — ${plan.description}`}>
+          <div class="fp-thumb">
+            <img src={plan.src} alt={plan.label} loading="lazy" />
+            <div class="fp-zoom-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35M11 8v6M8 11h6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="fp-info">
+            <span class="fp-label">{plan.label}</span>
+            <span class="fp-desc">{plan.description}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .floor-plans {
+    background: var(--color-bg);
+  }
+
+  .fp-header {
+    max-width: var(--content-width);
+    margin: 0 auto var(--space-lg);
+  }
+
+  .fp-intro {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-top: calc(-1 * var(--space-sm));
+  }
+
+  .fp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    gap: var(--space-md);
+  }
+
+  .fp-item {
+    display: block;
+    border: 1px solid var(--color-border);
+    transition: box-shadow 0.3s;
+  }
+
+  .fp-item:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  }
+
+  .fp-thumb {
+    position: relative;
+    aspect-ratio: 4/3;
+    background: #f5f0e8;
+    overflow: hidden;
+  }
+
+  .fp-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+    filter: sepia(5%) contrast(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  .fp-item:hover .fp-thumb img {
+    transform: scale(1.02);
+  }
+
+  .fp-zoom-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .fp-item:hover .fp-zoom-icon {
+    opacity: 1;
+  }
+
+  .fp-info {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-white);
+  }
+
+  .fp-label {
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    color: var(--color-text);
+  }
+
+  .fp-desc {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    letter-spacing: 0.04em;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .fp-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import RavineBluffsCottage from '../components/RavineBluffsCottage.astro';
+import '../styles/global.css';
+---
+
+<Layout
+  title="The Booth Cottage — Frank Lloyd Wright, Glencoe, Illinois"
+  description="The Booth Cottage, designed by Frank Lloyd Wright in 1913 as temporary housing for Sherman and Elizabeth Booth. A proto-Usonian design, rescued from demolition and relocated to Ravine Bluffs Park in 2020."
+>
+  <Nav />
+
+  <div class="cottage-page-hero">
+    <div class="container">
+      <a href="/" class="back-link">← The Booth House</a>
+      <p class="page-eyebrow">Frank Lloyd Wright · Glencoe, Illinois · 1913</p>
+      <h1 class="page-title">The Booth Cottage</h1>
+      <div class="page-rule"></div>
+      <p class="page-tagline">Designed as temporary housing before the main house was built — and now recognized as one of Wright's most prophetic small structures.</p>
+    </div>
+  </div>
+
+  <RavineBluffsCottage />
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p class="footer-name">The Booth House</p>
+          <p class="footer-sub">Designed by Frank Lloyd Wright · Glencoe, Illinois · 1915</p>
+        </div>
+        <div class="footer-right">
+          <a href="/" class="footer-link">← Back to main site</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; {new Date().getFullYear()} · All rights reserved</p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .cottage-page-hero {
+    background: var(--color-bg-dark);
+    padding: 8rem 0 4rem;
+    color: var(--color-white);
+  }
+
+  .back-link {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: var(--color-white);
+  }
+
+  .page-eyebrow {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    margin-bottom: 1rem;
+  }
+
+  .page-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--color-white);
+  }
+
+  .page-rule {
+    width: 50px;
+    height: 1px;
+    background: var(--color-accent-light);
+    margin: 1.5rem 0;
+  }
+
+  .page-tagline {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 560px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .footer {
+    background: var(--color-bg-dark);
+    color: rgba(255,255,255,0.6);
+    padding: var(--space-lg) 0 var(--space-md);
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .footer-name {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-white);
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-sub {
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+  }
+
+  .footer-link {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    transition: color 0.2s;
+  }
+
+  .footer-link:hover {
+    color: var(--color-white);
+  }
+
+  .footer-copy {
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 600px) {
+    .footer-inner { flex-direction: column; }
+  }
+</style>
