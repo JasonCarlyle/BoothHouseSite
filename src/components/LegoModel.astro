@@ -1,8 +1,8 @@
 ---
 const photos = [
-  { src: "/images/lego/lego-01.jpg", caption: "Lego model — front elevation showing Prairie proportions and horizontal massing" },
-  { src: "/images/lego/lego-02.jpg", caption: "Lego model — complete layout view" },
-  { src: "/images/lego/lego-03.jpg", caption: "Lego model — first floor plan layout" },
+  { src: "/images/lego/lego-physical.jpg", caption: "The physical Lego model — front elevation showing Wright's Prairie proportions and horizontal massing" },
+  { src: "/images/lego/lego-render-01.png", caption: "Stud.io digital render — front and side elevation, showing the stair tower, cantilevered eaves, and entry" },
+  { src: "/images/lego/lego-render-02.png", caption: "Stud.io digital render — rear and side elevation, showing the roof garden and low-slung main block" },
 ];
 ---
 
@@ -13,9 +13,20 @@ const photos = [
       <h2 class="section-title">A Lego Tribute</h2>
       <div class="divider"></div>
       <p class="lego-intro">
-        A hand-built Lego model of the Booth House — capturing Wright's signature horizontal
-        lines, cantilevered eaves, and Prairie proportions brick by brick.
+        A custom Lego model of the Booth House — capturing Wright's signature horizontal
+        lines, cantilevered eaves, stair tower, and Prairie proportions brick by brick.
+        The model was designed in <a href="https://www.bricklink.com/v3/studio/download.page" target="_blank" rel="noopener" class="lego-link">Stud.io</a>,
+        BrickLink's free Lego design application. Download the model file below to open,
+        explore, or modify it yourself.
       </p>
+      <a href="/downloads/ShermanBoothHouse.io" download class="lego-download">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Stud.io Model File — Sherman Booth House.io
+      </a>
     </div>
 
     <div class="lego-layout">
@@ -55,6 +66,32 @@ const photos = [
     color: var(--color-text-muted);
     line-height: 1.7;
     margin-top: calc(-1 * var(--space-sm));
+  }
+
+  .lego-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .lego-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-md);
+    padding: 0.65rem 1.25rem;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .lego-download:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
   }
 
   .lego-layout {
@@ -100,6 +137,7 @@ const photos = [
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    align-content: start;
   }
 
   .lego-thumb {
