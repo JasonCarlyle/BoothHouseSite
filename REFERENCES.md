@@ -45,6 +45,8 @@ Each entry carries the footnote number used in the site's inline citations.
 
 ---
 
+**[19]** "Re-Examining Ravine Bluffs: A debate of 'affordable housing' stemming from Wright's Glencoe, Illinois building." *Frank Lloyd Wright Building Conservancy*, June 22, 2018. https://savewright.org/re-examining-ravine-bluffs/ — Source for the August 4, 1914 plat approval, July 1915 marketing, the October 28, 1915 building permits at $7,500, house sizes, H. A. Peters and Company, and the 1917–1921 sales history. Basis for the site's rejection of the "low-cost rental" characterization.
+
 ## Uncited Sources (used for background / fact-checking)
 
 - wrightinglencoe.org — neighborhood-level history and walking tour context
@@ -57,6 +59,10 @@ Each entry carries the footnote number used in the site's inline citations.
 - villageofglencoe.org — Glencoe Historic Architectural Survey
 - en.wikipedia.org/wiki/William_A._Glasner_House — Glasner House context
 - documents.alexanderstreet.com — Elizabeth Booth biographical sketch (also footnoted as [7])
+- Hansen, Kristine. *Frank Lloyd Wright's Illinois: Explore His Most Prolific State, From Prairie to Usonian*. Globe Pequot, 2026. ISBN 978-1-4930-9277-2. — Most recent published treatment of the Booth House; listed in the site bibliography.
+- Storrer, William Allin. *The Frank Lloyd Wright Companion* (rev. ed.). University of Chicago Press, 2006. ISBN 978-0-226-77621-7. — As-built plans; Ravine Bluffs treated at pp. 185–192.
+- Pfeiffer, Bruce Brooks & Futagawa, Yukio. *Frank Lloyd Wright Monograph 1914–1923* (Vol. 4, Complete Works). A.D.A. Edita, Tokyo, 1985. ISBN 978-4-87140-515-7. — Drawings and photographs of the Booth House and Ravine Bluffs.
+- Frank Lloyd Wright Building Conservancy. *Wright Sites: A Guide to Frank Lloyd Wright Public Places* (3rd ed.). Princeton Architectural Press, 2017. ISBN 978-1-61689-577-8. — Glencoe entry covering the 1911 estate scheme and the 1915 subdivision.
 
 ---
 
