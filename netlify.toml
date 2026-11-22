@@ -4,3 +4,16 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Booth House 3D model (password protected). The files live on a separate private Netlify site that is NOT in
+# this public repo; this rule just serves it under /3d-model/. The password check runs on that site.
+[[redirects]]
+  from = "/3d-model"
+  to = "/3d-model/"
+  status = 301
+
+[[redirects]]
+  from = "/3d-model/*"
+  to = "https://booth-3d-model.netlify.app/3d-model/:splat"
+  status = 200
+  force = true
