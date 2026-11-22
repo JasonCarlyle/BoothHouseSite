@@ -6,11 +6,14 @@
   NODE_VERSION = "22"
 
 # Booth House 3D model (password protected). The files live on a separate private Netlify site that is NOT in
-# this public repo; this rule just serves it under /3d-model/. The password check runs on that site.
+# this public repo; these rules serve it under /3d-model/. The password check is netlify/edge-functions/model-gate.js
+# (it runs on this site, before the proxy).
+# The page itself, explicitly (Netlify matches /3d-model and /3d-model/ alike; the viewer's asset paths are absolute).
 [[redirects]]
-  from = "/3d-model"
-  to = "/3d-model/"
-  status = 301
+  from = "/3d-model/"
+  to = "https://booth-3d-model.netlify.app/3d-model/index.html"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/3d-model/*"
